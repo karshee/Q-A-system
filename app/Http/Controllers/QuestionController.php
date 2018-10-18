@@ -3,11 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use DB;
 class QuestionController extends Controller
 {
-    function index()
+    public function index()
     {
-        return 'This is the list of questions';
+     $view = view("questions/index");
+        return $view;
+        
+    }
+    
+
+    public function show(){
+       return 'This is a detail of a question';
     }
 }
