@@ -13,7 +13,7 @@ class AnswersAddRating extends Migration
      */
     public function up()
     {
-        //
+        $table->
     }
 
     /**

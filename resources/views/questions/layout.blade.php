@@ -15,7 +15,7 @@
 </head>
 <body>
 
-    <?@include('navbar.blade.php'); ?>
+    @include('questions/navbar')
     
     <html>
     <head>

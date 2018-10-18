@@ -1,4 +1,4 @@
-
+@extends('questions/layout')
  
 @section('content') 
 
