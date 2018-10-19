@@ -11,6 +11,7 @@
 <section id="questions">
 <div class="container">
 
+    @foreach ($questions as $question)
     <div class="question">
         <div class="question-left">
             <div class="question-stat">
@@ -33,5 +34,7 @@
     </div>
 </div>
 </section>
+
+@endforeach
  
 @endsection 

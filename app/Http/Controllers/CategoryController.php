@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use Illuminate\Http\Request;
 use DB;
 class CategoryController extends Controller
@@ -15,5 +16,11 @@ class CategoryController extends Controller
             $view = view("categories/index", [
                 "categories" => $categories
             ]);
+    }
+
+    public function create(){
+
+        $category = new Category;
+        return view('categories/edit', compact('category'));
     }
 }
